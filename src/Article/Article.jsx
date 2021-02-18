@@ -38,7 +38,8 @@ const Article = () => {
 
       <h2>The history of the Statue of Liberty</h2>
 
-      <p>Not only is the Statue of Liberty the symbol of New York City, she is also a 
+      <p>
+        Not only is the Statue of Liberty the symbol of New York City, she is also a 
         UNESCO World Heritage site under the designation of <i>Outstanding Universal Value</i>.
       </p>
 
