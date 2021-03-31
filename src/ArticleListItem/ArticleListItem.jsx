@@ -16,19 +16,22 @@ const ArticleListItem = (props) => {
   return (
     <li className={styles.item}>
       <article className={styles.article}>
-      <ArticleImage url={props.article.image._url} title={props.article.title} />
-      <Link to={articleLink} className={styles.title}><h2 className={styles.title}>{props.article.title}</h2></Link>
+        <div className={styles.wrapper}>
+          <ArticleImage url={props.article.image._url} title={props.article.title} />
+          <Link to={articleLink} className={styles.title}><h2 className={styles.title}>{props.article.title}</h2></Link>
+        </div>
         {showInfo && 
-          <div>
+          <div className={styles.desc}>
             <time className={styles.dateTime}  dateTime={props.article.timeStamp}>
               {props.article.displayDate}
             </time>
             <p>{props.article.shortText}</p>
           </div>
         }
+        <ArticleTextToggleButton onClick={onClick} buttonText={showInfo ? "Show Less" : "Show More"}/>
       </article>
       
-      <ArticleTextToggleButton onClick={onClick} buttonText={showInfo ? "Show Less" : "Show More"}/>
+      
     </li>
   );
 };
