@@ -1,10 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./HTMLText.module.css";
+import style from "./HTMLText.module.css";
 
 const HTMLText = (props) => {
+  let processed4Col = '<div style="column-count: 4;">';
+  processed4Col = processed4Col.concat(props.text);
+  processed4Col = processed4Col.concat('</div>');
+
+  let processed2Col = '<div style="column-count: 2;">';
+  processed2Col = processed2Col.concat(props.text);
+  processed2Col = processed2Col.concat('</div>');
+
   return (
-    <div className={styles.txt}  dangerouslySetInnerHTML={{ __html: props.text }} />
+    <div>
+      <div className={style.wideScreen} dangerouslySetInnerHTML={{ __html: processed4Col }} />
+      <div className={style.narrowScreen} dangerouslySetInnerHTML={{ __html: processed2Col }} />
+    </div>
+  
   );
 };
 

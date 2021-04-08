@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleListItem tests renders correctly 1`] = `
+<div>
+  <li
+    class="item"
+  >
+    <article
+      class="article"
+    >
+      <div
+        class="wrapper"
+      >
+        <img
+          alt="The Statue of Liberty's torch heads to new museum"
+          class="img"
+          src="https://cdn.cnn.com/cnnnext/dam/assets/181122102925-statue-of-liberty-crown-super-169.jpg"
+        />
+        <a
+          class="title"
+          href="/articlelist/181122102925-statue-of-liberty-crown"
+        >
+          <h2
+            class="title"
+          >
+            The Statue of Liberty's torch heads to new museum
+          </h2>
+        </a>
+      </div>
+      <button
+        class="button"
+      >
+        Show More
+      </button>
+    </article>
+  </li>
+</div>
+`;
+
+exports[`ArticleListItem tests renders correctly after button is clicked once 1`] = `
+<div>
+  <li
+    class="item"
+  >
+    <article
+      class="article"
+    >
+      <div
+        class="wrapper"
+      >
+        <img
+          alt="The Statue of Liberty's torch heads to new museum"
+          class="img"
+          src="https://cdn.cnn.com/cnnnext/dam/assets/181122102925-statue-of-liberty-crown-super-169.jpg"
+        />
+        <a
+          class="title"
+          href="/articlelist/181122102925-statue-of-liberty-crown"
+        >
+          <h2
+            class="title"
+          >
+            The Statue of Liberty's torch heads to new museum
+          </h2>
+        </a>
+      </div>
+      <div
+        class="desc"
+      >
+        <time
+          class="dateTime"
+          datetime="2018-11-22T15:12:24.000Z"
+        >
+          November 22nd 2018, 7:12 am
+        </time>
+        <p>
+          The Statue of Liberty's original torch is getting a new home
+        </p>
+      </div>
+      <button
+        class="button"
+      >
+        Show Less
+      </button>
+    </article>
+  </li>
+</div>
+`;
+
+exports[`ArticleListItem tests renders correctly after button is clicked twice 1`] = `
+<div>
+  <li
+    class="item"
+  >
+    <article
+      class="article"
+    >
+      <div
+        class="wrapper"
+      >
+        <img
+          alt="The Statue of Liberty's torch heads to new museum"
+          class="img"
+          src="https://cdn.cnn.com/cnnnext/dam/assets/181122102925-statue-of-liberty-crown-super-169.jpg"
+        />
+        <a
+          class="title"
+          href="/articlelist/181122102925-statue-of-liberty-crown"
+        >
+          <h2
+            class="title"
+          >
+            The Statue of Liberty's torch heads to new museum
+          </h2>
+        </a>
+      </div>
+      <button
+        class="button"
+      >
+        Show More
+      </button>
+    </article>
+  </li>
+</div>
+`;

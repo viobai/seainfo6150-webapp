@@ -1,7 +1,9 @@
-.txt {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
+@media screen and (max-width: 800px) {
+    .narrowScreen { display: block; }
+    .wideScreen { display: none; }
 }
 
+@media screen and (min-width: 801px) {
+    .narrowScreen { display: none; }
+    .wideScreen { display: block; }
+}
